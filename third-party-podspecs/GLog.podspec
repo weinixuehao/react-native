@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'GLog'
-  spec.version = 'fixspeechlflytek'
+  spec.version = '0.3.4'
   spec.license = { :type => 'Google', :file => 'COPYING' }
   spec.homepage = 'https://github.com/google/glog'
   spec.summary = 'Google logging module'
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.prepare_command = File.read("../scripts/ios-configure-glog.sh")
   spec.source = { :git => 'https://github.com/weinixuehao/glog.git',
-                  :tag => "{spec.version}" }
+                  :tag => "v#{spec.version}" }
   spec.module_name = 'glog'
   spec.source_files = 'src/glog/*.h',
                       'src/demangle.cc',
